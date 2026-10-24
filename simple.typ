@@ -2,7 +2,7 @@
  * Tested with typst 0.14.2
  */
 
-#import "@preview/chronos:0.2.1"
+#import "@preview/chronos:0.3.0"
 
 #let GLOBAL_BLOCK_FILL  = rgb(50, 50, 50)
 #let GLOBAL_BLOCK_INSET = 8pt
