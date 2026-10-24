@@ -14,6 +14,7 @@
   author: "John Doe",
   date: datetime(year: 2026, month: 2, day: 1),
 )
+#set text(lang: "en")
 #set page(fill: GLOBAL_PAGE_FILL)
 #set text(fill: GLOBAL_TEXT)
 #set heading(numbering: "1.1")
@@ -59,7 +60,7 @@
 )
 
 Example citations: an article @zhao2026c2rust and a website
-@cloudflare-radar-8888.
+@cloudflare-radar-8888. Example citation with specific page. @zhao2026c2rust[p. 5]
 
 @fig-passkey-create-and-register-overview approximates passkey creation process
 steps on a high level. @fig-passkey-create-and-register-detailed depicts the
