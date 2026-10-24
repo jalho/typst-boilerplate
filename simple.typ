@@ -1,5 +1,5 @@
 /*
- * Tested with typst 0.14.2
+ * Tested with typst 0.15.1
  */
 
 #import "@preview/chronos:0.3.0"
