@@ -11,6 +11,7 @@
 
 #set document(
   title: [Username-less Passkey Auth],
+  author: "John Doe",
   date: datetime(year: 2026, month: 2, day: 1),
 )
 #set page(fill: GLOBAL_PAGE_FILL)
@@ -18,6 +19,8 @@
 #set heading(numbering: "1.1")
 
 #title()
+
+#context document.author.join(", "), #context document.date.display("[year]-[month]-[day]")
 
 #outline()
 
