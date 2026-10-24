@@ -19,6 +19,9 @@
 
 #title()
 
+#outline()
+
+#pagebreak()
 = Overview
 
 #table(
@@ -170,6 +173,7 @@ process in more detail.
   ) <fig-passkey-create-and-register-detailed>
 ]
 
+#pagebreak()
 #bibliography(
   bytes(```yaml
 zhao2026c2rust:
