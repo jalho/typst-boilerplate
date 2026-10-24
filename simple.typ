@@ -1,5 +1,5 @@
 /*
- * Tested with typst 0.14.2 (latest as of 2026-02-01).
+ * Tested with typst 0.14.2
  */
 
 #import "@preview/chronos:0.2.1"
@@ -10,7 +10,8 @@
 #let GLOBAL_PAGE_FILL = rgb(20, 20, 20)
 
 #set document(
-  title: [Username-less Passkey Auth]
+  title: [Username-less Passkey Auth],
+  date: datetime(year: 2026, month: 2, day: 1),
 )
 #set page(fill: GLOBAL_PAGE_FILL)
 #set text(fill: GLOBAL_TEXT)
@@ -50,6 +51,9 @@
   ]],
   [],
 )
+
+Example citations: an article @zhao2026c2rust and a website
+@cloudflare-radar-8888.
 
 @fig-passkey-create-and-register-overview approximates passkey creation process
 steps on a high level. @fig-passkey-create-and-register-detailed depicts the
@@ -165,3 +169,32 @@ process in more detail.
     caption: [Creating a passkey.],
   ) <fig-passkey-create-and-register-detailed>
 ]
+
+#bibliography(
+  bytes(```yaml
+zhao2026c2rust:
+  type: Article
+  title: "Fine-Tuning Qwen3-27B for C-to-Rust Code Translation: A Three-Stage Curriculum of Pretraining, Debugging-Aware SFT, and Task-Specific SFT"
+  author:
+    - Zhao, Pu
+    - Yang, Changdi
+    - Chen, Yixiao
+    - Gao, Yi
+    - Cao, Yifan
+    - Zeng, Haochen
+    - Wang, Yanzhi
+  date: 2026-08-13
+  serial-number:
+    arxiv: "2608.13681"
+  url: https://arxiv.org/abs/2608.13681
+
+cloudflare-radar-8888:
+  type: Web
+  title: "Cloudflare Radar: IP address 8.8.8.8"
+  author: Cloudflare
+  url:
+    value: https://radar.cloudflare.com/ip/8.8.8.8
+    date: 2026-10-24
+```.text),
+  style: "ieee",
+)
