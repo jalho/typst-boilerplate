@@ -64,7 +64,8 @@ Example citations: an article @zhao2026c2rust and a website
 
 @fig-passkey-create-and-register-overview approximates passkey creation process
 steps on a high level. @fig-passkey-create-and-register-detailed depicts the
-process in more detail.
+process in more detail. @lst-start-registration shows how the server starts the
+registration with _webauthn-rs_.
 
 #block(breakable: false)[
   #figure(
@@ -176,6 +177,20 @@ process in more detail.
     caption: [Creating a passkey.],
   ) <fig-passkey-create-and-register-detailed>
 ]
+
+#figure(
+  kind: raw,
+  block(fill: GLOBAL_BLOCK_FILL, inset: GLOBAL_BLOCK_INSET, width: 100%, align(left)[
+    ```rust
+    fn start_registration(webauthn: &Webauthn, user_id: Uuid) {
+        let (challenge, state) = webauthn
+            .start_passkey_registration(user_id, "john", "John Doe", None)
+            .expect("failed to start registration");
+    }
+    ```
+  ]),
+  caption: [Starting a passkey registration.],
+) <lst-start-registration>
 
 #pagebreak()
 #bibliography(
